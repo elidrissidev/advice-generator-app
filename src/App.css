@@ -1,0 +1,6 @@
+.App {
+  align-items: flex-start;
+  background-color: var(--bg-color);
+  display: flex;
+  height: 100%;
+}
