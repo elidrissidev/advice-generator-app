@@ -4,6 +4,7 @@
   box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.10);
   color: var(--text-color);
   margin: 7.5rem 1rem;
+  max-width: 33.75rem;
   padding: 2.5rem 1.5rem 4rem;
   position: relative;
   text-align: center;
@@ -28,7 +29,7 @@
 }
 
 .AdviceCard__divider {
-  background: url("data:image/svg+xml,%3Csvg width='295' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%234F5D74' d='M0 8h122v1H0zm173 0h122v1H173z'/%3E%3Cg transform='translate(138)' fill='%23CEE3E9'%3E%3Crect width='6' height='16' rx='3'/%3E%3Crect x='14' width='6' height='16' rx='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background: url("data:image/svg+xml,%3Csvg width='444' height='16' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%234F5D74' d='M0 8h196v1H0zM248 8h196v1H248z'/%3E%3Cg transform='translate(212)' fill='%23CEE3E9'%3E%3Crect width='6' height='16' rx='3'/%3E%3Crect x='14' width='6' height='16' rx='3'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") no-repeat center;
   height: 1rem;
   width: 100%;
 }
@@ -61,4 +62,19 @@
   position: absolute;
   width: 1px;
   white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+  .AdviceCard {
+    margin: 4rem 0 6rem;
+    padding: 3rem 3rem 4.5rem;
+  }
+
+  .AdviceCard__quote {
+    margin-bottom: 2.5rem;
+  }
+
+  .quote__content {
+    font-size: 1.75rem;
+  }
 }

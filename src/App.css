@@ -2,5 +2,12 @@
   align-items: flex-start;
   background-color: var(--bg-color);
   display: flex;
+  justify-content: center;
   min-height: 100%;
+}
+
+@media (min-width: 768px) {
+  .App {
+    align-items: center;
+  }
 }
