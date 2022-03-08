@@ -1,3 +1,11 @@
+:root {
+  --bg-color: #202733;
+  --card-bg-color: #313A48;
+  --text-color: #CEE3E9;
+  --divider-color: #4F5D74;
+  --neon-green: #53FFAA;
+}
+
 html {
   height: 100%;
 }
