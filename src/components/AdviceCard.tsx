@@ -1,4 +1,5 @@
 import './AdviceCard.css'
+import { ReactComponent as IconDice } from '@/assets/icon-dice.svg'
 
 function AdviceCard() {
   return (
@@ -11,7 +12,17 @@ function AdviceCard() {
         </p>
       </blockquote>
       <div className="AdviceCard__divider"></div>
+      <GenerateAdvice />
     </div>
+  )
+}
+
+function GenerateAdvice() {
+  return (
+    <button type="button" className="GenerateAdvice">
+      <IconDice />
+      <span>Generate Advice</span>
+    </button>
   )
 }
 
