@@ -35,11 +35,14 @@
 }
 
 .GenerateAdvice {
+  align-items: center;
   background-color: var(--neon-green);
   border-radius: 50%;
   border: none;
   bottom: -2rem;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
   height: 4rem;
   left: 50%;
   position: absolute;
