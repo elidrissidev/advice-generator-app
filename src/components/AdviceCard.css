@@ -51,8 +51,13 @@
   width: 4rem;
 }
 
-.GenerateAdvice:hover {
-  box-shadow: 0px 0px 40px #53FFAA;
+.GenerateAdvice:hover:not(:disabled) {
+  box-shadow: 0px 0px 40px var(--neon-green);
+}
+
+.GenerateAdvice:disabled {
+  background-color: #41AC84;
+  cursor: default;
 }
 
 .GenerateAdvice span {
