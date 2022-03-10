@@ -33,7 +33,7 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL](https://github.com/elidrissidev/advice-generator-app)
+- [Solution URL](https://www.frontendmentor.io/solutions/advice-generator-app-with-react-and-reactquery-includes-tests-WJpkEqmuA)
 - [Live Site URL](https://advice-generator-app-elidrissidev.vercel.app)
 
 ## My process
