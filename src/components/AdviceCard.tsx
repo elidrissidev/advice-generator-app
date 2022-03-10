@@ -14,7 +14,12 @@ function AdviceCard() {
         {isLoading ? 'Loading...' : `Advice #${advice?.id}`}
       </h1>
       <blockquote className="AdviceCard__quote">
-        <p className="quote__content" aria-live="polite" aria-busy={isFetching}>
+        <p
+          className="quote__content"
+          data-testid="quote"
+          aria-live="polite"
+          aria-busy={isFetching}
+        >
           {isLoading ? 'Loading...' : `“${advice?.advice}”`}
         </p>
       </blockquote>

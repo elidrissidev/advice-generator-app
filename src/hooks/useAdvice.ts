@@ -17,7 +17,6 @@ function useAdvice() {
     onSuccess: advice => {
       window.localStorage.setItem('currentAdvice', JSON.stringify(advice))
     },
-    onError: err => alert(`Error encountered: ${err.message}`),
   })
 }
 
