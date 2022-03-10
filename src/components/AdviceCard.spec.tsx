@@ -36,6 +36,7 @@ beforeEach(() => {
 
 afterEach(() => {
   jest.restoreAllMocks()
+  nock.cleanAll()
 })
 
 describe('AdviceCard', () => {
@@ -88,9 +89,12 @@ describe('AdviceCard', () => {
   })
 
   it('fetches a new advice when clicking the button', async () => {
-    jest
-      .spyOn(Storage.prototype, 'getItem')
-      .mockReturnValue(JSON.stringify({ id: 2, advice: "Don't drink bleach." }))
+    jest.spyOn(Storage.prototype, 'getItem').mockReturnValue(
+      JSON.stringify({
+        id: 3,
+        advice: 'Good things happen to those who wait.',
+      })
+    )
 
     const scope = nock('https://api.adviceslip.com')
       .get('/advice')
